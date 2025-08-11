@@ -22,7 +22,7 @@ Avant de commencer, assurez-vous d’avoir :
 ### 1️⃣ Cloner le projet
 
 ```bash
-git clone https://github.com/votre-repo/securepass.git
+git clone https://github.com/X-jonica/docker_pass_php.git
 cd securepass
 ```
 
