@@ -28,21 +28,23 @@ cd securepass
 
 ### 2️⃣ Configurer l’environnement
 
-Créez un fichier `.env` à la racine du projet (vous pouvez copier `.env.example` si disponible) et adaptez les valeurs :
+Un fichier `.env` est déjà présent dans app/.env
+⚠️ **Important :** Vous devez **modifier** les valeurs qu’il contient pour que l’application fonctionne sur votre machine.
 
 ```ini
 # Paramètres MySQL
-DB_ROOT_PASSWORD=votre_mot_de_passe_complexe
-DB_NAME=securepass_db
-DB_USER=securepass_user
-DB_PASSWORD=autre_mot_de_passe_complexe
+DB_HOST=votre_host #('localhost par exemple')
+DB_NAME=nom_de_la_bd #("manage_password" par exemple)
+DB_USER=utilisateur-de-bd #("root" par exemple)
+DB_PASSWORD=mot_de_passe_de_votre_bd #("motdepasse123" par exemple)
+DB_CHARSET=utf8mb4
 
 # Paramètres applicatifs (optionnels)
 APP_ENV=prod
 APP_DEBUG=false
 ```
 
-💡 **Astuce** : Utilisez des mots de passe forts pour plus de sécurité.
+💡 **Astuce** : Utilisez des mots de passe forts et uniques pour plus de sécurité.
 
 ---
 
@@ -67,9 +69,7 @@ Cette commande :
 | Service     | URL                                            | Identifiants                                                                    |
 | ----------- | ---------------------------------------------- | ------------------------------------------------------------------------------- |
 | Application | [http://localhost:8000](http://localhost:8000) | Aucun                                                                           |
-| phpMyAdmin  | [http://localhost:8080](http://localhost:8080) | Utilisateur : `root`<br>Mot de passe : valeur de `DB_ROOT_PASSWORD` dans `.env` |
-| MySQL       | Host : `db` (interne Docker)                   | Utilisateur : valeur de `DB_USER`<br>Mot de passe : valeur de `DB_PASSWORD`     |
-
+| phpMyAdmin  | [http://localhost:8080](http://localhost:8080) | 
 ---
 
 ## 🔍 Vérifier le bon fonctionnement
@@ -102,5 +102,3 @@ Cela permet de suivre les messages de l’application en temps réel.
 - Identifiants :
   - **Utilisateur** : `root`
   - **Mot de passe** : valeur de `DB_ROOT_PASSWORD` dans `.env`
-
----
