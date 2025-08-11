@@ -66,8 +66,6 @@ Cette commande :
 
 ## 🌐 Accéder aux services
 
-| Service     | URL                                            |
-| ----------- | ---------------------------------------------- | ------------------------------------------------------------------------------- |
 | Application | [http://localhost:8000](http://localhost:8000) |                                                                            |
 | phpMyAdmin  | [http://localhost:8080](http://localhost:8080) |
 ---
