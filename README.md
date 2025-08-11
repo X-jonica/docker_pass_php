@@ -23,7 +23,7 @@ Avant de commencer, assurez-vous d’avoir :
 
 ```bash
 git clone https://github.com/X-jonica/docker_pass_php.git
-cd securepass
+cd docker_pass_php
 ```
 
 ### 2️⃣ Configurer l’environnement
