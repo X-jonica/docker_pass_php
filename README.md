@@ -50,7 +50,7 @@ cd docker_pass_php
 Un fichier `.env` est déjà présent dans app/.env.  
 ⚠️ **Important :** modifiez les valeurs pour correspondre à votre configuration.
 
-\`\`\`ini
+```ini
 # Paramètres MySQL
 DB_HOST=votre_host            # ex: localhost
 DB_NAME=nom_de_la_bd          # ex: manage_password
@@ -61,13 +61,13 @@ DB_CHARSET=utf8mb4
 # Paramètres applicatifs
 APP_ENV=prod
 APP_DEBUG=false
-\`\`\`
+```
 💡 **Astuce** : Utilisez un mot de passe fort et unique pour plus de sécurité.
 
 ### 3️⃣ Lancer les services
-\`\`\`bash
+```bash
 docker compose up -d
-\`\`\`
+```
 Cela va :
 - Télécharger et construire les images nécessaires  
 - Lancer les conteneurs en arrière-plan  
@@ -82,10 +82,10 @@ Cela va :
 ## 🛠️ Méthode 2 – Sans Docker
 
 ### 1️⃣ Cloner le projet
-\`\`\`bash
+```bash
 git clone https://github.com/X-jonica/docker_pass_php.git
 cd docker_pass_php/app
-\`\`\`
+```
 
 ### 2️⃣ Configurer l’environnement
 Ouvrez le fichier `.env` et adaptez les valeurs à votre environnement local (mêmes paramètres que pour Docker).
@@ -97,9 +97,9 @@ Ouvrez le fichier `.env` et adaptez les valeurs à votre environnement local (m�
 
 ### 4️⃣ Lancer l’application
 Dans un terminal, exécutez :
-\`\`\`bash
+```bash
 php -S localhost:8000
-\`\`\`
+```
 
 ### 5️⃣ Accéder à l’application
 - **Application** : [http://localhost:8000](http://localhost:8000)  
