@@ -5,7 +5,7 @@ require_once '../config/config.php';
 class Password
 {
     // 🔐 Clé de chiffrement pour sécuriser les mots de passe enregistrés
-    private static $encryption_key = 'ta_clé_ultra_secrète_à_définir_et_stocker_dans_un_fichier_env';
+    private static $encryption_key = 'ma_clé_ultra_secrète_à_définir_et_stocker_dans_un_fichier_env';
 
     // ➕ Ajouter un mot de passe
     public static function add($user_id, $site_name, $site_url, $login, $password, $notes)
