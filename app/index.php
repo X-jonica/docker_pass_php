@@ -20,9 +20,10 @@
             <a class="navbar-brand font-weight-bold" href="#">
                 <i class="fas fa-lock mr-2"></i>SecurePass
             </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+            <button id="menuToggle" class="navbar-toggler" type="button" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
+
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
@@ -35,7 +36,7 @@
                         <a class="nav-link" href="#contact">Contact</a>
                     </li>
                     <li class="nav-item ml-lg-3">
-                        <a href="../views/login.php" class="btn btn-outline-light">Connexion</a>
+                        <a href="../views/login.php" id="btn-connexion-nav" class="btn btn-outline-light">Connexion</a>
                     </li>
                 </ul>
             </div>
@@ -44,17 +45,17 @@
 
     <!-- Hero Section -->
     <section id="accueil" class="hero-section">
-        <div class="container text-center py-5">
+        <div class="container text-center py-5" id="hero-section-div">
             <span class="security-badge mb-3">
                 <i class="fas fa-shield-alt mr-2"></i>Sécurité de niveau bancaire
             </span>
-            <h1 class="display-4 font-weight-bold mb-4">Gérez vos mots de passe en toute sécurité</h1>
+            <h1 class="display-4 font-weight-bold mb-4" id="title_doc">Gérez vos mots de passe en toute sécurité</h1>
             <p class="lead mb-5">SecurePass protège vos identifiants et vous permet de naviguer en ligne sans souci</p>
-            <div class="d-flex justify-content-center">
-                <a href="../views/login.php" class="btn btn-primary btn-lg mr-3">
+            <div class="d-flex justify-content-center" id="group_btn">
+                <a href="../views/login.php" id="connexion-btn" class="btn btn-primary btn mr-3" >
                     <i class="fas fa-sign-in-alt mr-2"></i>Se connecter
                 </a>
-                <a href="#" id="demo-video" class="btn btn-outline-light btn-lg">
+                <a href="#" id="demo-video" class="btn btn-outline-light">
                     <i class="fas fa-play-circle mr-2"></i>Voir la démo
                 </a>
             </div>
@@ -62,7 +63,7 @@
     </section>
 
     <!-- Features Section -->
-    <section id="fonctionnalite" class="py-5">
+    <section id="fonctionnalite" class="py-4">
         <div class="container py-5">
             <div class="text-center mb-5">
                 <h2 class="font-weight-bold mb-3">Pourquoi choisir SecurePass ?</h2>
@@ -104,11 +105,11 @@
     </section>
 
     <!-- CTA Section -->
-    <section class="py-5 bg-light">
+    <section id="CTA" class="py-5 bg-light">
         <div class="container py-5 text-center">
             <h2 class="font-weight-bold mb-4">Prêt à simplifier votre vie numérique ?</h2>
             <p class="lead mb-5">Rejoignez les utilisateurs qui protègent déjà leurs identifiants avec SecurePass</p>
-            <a href="../views/register.php" class="btn btn-primary btn-lg px-5">
+            <a href="../views/register.php" id="btn-start-now" class="btn btn-primary btn-lg px-5">
                 <i class="fas fa-user-plus mr-2"></i>Commencer maintenant
             </a>
         </div>
@@ -170,6 +171,14 @@
         demo.addEventListener("click", () => {
             alert("Pas encore disponible pour le moment!")
         })
+
+        const toggleButton = document.getElementById('menuToggle');
+        const navMenu = document.getElementById('navbarNav');
+
+        toggleButton.addEventListener('click', () => {
+            // toggle la classe "show" qui contrôle l'affichage Bootstrap
+            navMenu.classList.toggle('show');
+        });
     </script>
 </body>
 </html>

@@ -27,7 +27,7 @@ $passwords = Password::getAllByUser($user_id);
             <div class="d-flex justify-content-between align-items-center">
                 <h2 class="mb-0 d-flex align-items-center">
                     <i class="fas fa-lock text-primary mr-2"></i>
-                    <span>Mon tableau de bord</span>
+                    <span id="dashboard-title">Mon tableau de bord</span>
                 </h2>
                 <div class="d-flex">
                     <button id="deconnexion" class="btn btn-outline-secondary mr-2">
