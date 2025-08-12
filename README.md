@@ -105,7 +105,7 @@ Ouvrez le fichier `.env` et adaptez les valeurs à votre environnement local (m�
 
 - Ouvrez **phpMyAdmin** depuis votre serveur local (XAMPP/LAMP/WAMP).
 - Créez une nouvelle base de données avec le nom indiqué dans `.env`.
-- Importez le fichier SQL fourni dans le projet (`database/schema.sql` ou équivalent).
+- Importez le fichier SQL fourni dans le projet (`db/init.sql` ou équivalent).
 
 ### 4️⃣ Lancer l’application
 
