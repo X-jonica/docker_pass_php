@@ -41,10 +41,10 @@ Ce guide vous explique **deux façons simples** de tester et utiliser SecurePass
 ## 🛠️ Méthode 1 – Avec Docker
 
 ### 1️⃣ Cloner le projet
-\`\`\`bash
+```bash
 git clone https://github.com/X-jonica/docker_pass_php.git
 cd docker_pass_php
-\`\`\`
+```
 
 ### 2️⃣ Configurer l’environnement
 Un fichier `.env` est déjà présent dans app/.env.  
